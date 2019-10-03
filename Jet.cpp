@@ -27,4 +27,8 @@ void Jet::setEngines(int e){
 void Jet::setMileage(int x){
     if  (x >= 40 && x<=100)
         mileage=x;
+    if (fuelType == "Rocket" && numberofEngines>2)
+       mileage = mileage + (mileage * 0.055);
+    
+    
 }
