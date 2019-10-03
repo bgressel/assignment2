@@ -16,12 +16,12 @@ int main() {
     vehiclesArray[3] = new Car("Tesla", "T2", "electricity", "large");
     vehiclesArray[4] = new Bicycle("Mizuno", "Wave", 10);
     vehiclesArray[5] = new Car("BMW", "X5", "diesel", "grande");
-    vehiclesArray[6] = new Car();
-    vehiclesArray[7] = new Bicycle("eTAP", "P5X");
-    vehiclesArray[8] = new Bicycle("R&A", "Dogma F8", 5);
-    vehiclesArray[9] = new Car("Tesla", "T2", "electricity", "large");
-    vehiclesArray[10] = new Bicycle("Mizuno", "Wave", 10);
-    vehiclesArray[11] = new Car("BMW", "X5", "diesel", "grande");
+    vehiclesArray[6] = new Jet();
+    vehiclesArray[7] = new Jet(2, 100, "Rocket");
+    vehiclesArray[8] = new Scooter(0.5, "Razor", "F12");
+    vehiclesArray[9] = new Scooter(1, "Young", "8");
+    vehiclesArray[10] = new SkateBoard(0.1, "Runner", "U1U");
+    vehiclesArray[11] = new SkateBoard(0.4, "Loser", "X5");
 
     printVehiclesRoster(vehiclesArray, size);
 

@@ -13,7 +13,7 @@ private:
     string brand;
     
 public:
-    explicit SkateBoard(double m);
+    explicit SkateBoard(double m, string mo, string b);
     
     virtual ~SkateBoard();
     virtual double mileageEstimate(double time);
