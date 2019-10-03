@@ -21,5 +21,6 @@ public:
     
     void setEngines(int e); //sets engines
     virtual void mileageEstimate(double x); //sets mileage
+    virtual string toString();
 };
 #endif /* Jet_h */

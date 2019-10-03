@@ -3,8 +3,10 @@
 #include <SkateBoard.h>
 #include <stdlib.h>
 
-SkateBoard::SkateBoard(double m){
-    setMileage(m);
+SkateBoard::SkateBoard(double m, string mo, string b){
+    mileageEstimate(m);
+    setBrand(b);
+    setModel(mo);
 }
 
 SkateBoard::~SkateBoard()=default;
@@ -19,4 +21,8 @@ void SkateBoard::mileageEstimate(double time){
         temp = rand() % time + 1
         mileage= milage + temp;
     }
+}
+
+string SkateBoard::toString() {
+    return "SkateBoard\n" + Vehicle::toString();
 }

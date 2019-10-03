@@ -2,8 +2,10 @@
 //my own vehicle
 
 //sets mileage
-Scooter::Scooter(double m){
+Scooter::Scooter(double m, string mo, string b){
     mileageEstimate(m);
+    setBrand(b);
+    setModel(mo);
 }
 
 Scooter::~Scooter()=default;
@@ -21,4 +23,7 @@ double Scooter::mileageEstimate(double time){
     if  (time >= 60 ){
         mileage= 5;
     }
+}
+string Scooter::toString() {
+return "Scooter\n" + Vehicle::toString();
 }

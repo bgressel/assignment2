@@ -29,6 +29,8 @@ void Jet::mileageEstimate(double x){
     mileage=rand() % 60 + 40;
     if (fuelType == "Rocket" && numberofEngines>2)
        mileage = mileage + (mileage * 0.055);
-    
-    
 }
+
+string Jet::toString() {
+    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " +
+    numberofEngines;
