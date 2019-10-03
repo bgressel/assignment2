@@ -11,7 +11,7 @@ private:
     double mileage;
     
 public:
-    explicit SkateBoard(double mileage);
+    explicit SkateBoard(double m);
     
     virtual ~SkateBoard();
     virtual double setMileage(double time);

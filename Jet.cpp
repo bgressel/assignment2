@@ -1,5 +1,6 @@
 //Brendan Gressel
 #include "Jet.h"
+#include <stdlib.h>
 
 Jet::Jet(){
     setMileage(0);
@@ -25,8 +26,7 @@ void Jet::setEngines(int e){
 
 //sets milage and makes sure it follows conditions
 void Jet::setMileage(int x){
-    if  (x >= 40 && x<=100)
-        mileage=x;
+    mileage=rand() % 60 + 40;
     if (fuelType == "Rocket" && numberofEngines>2)
        mileage = mileage + (mileage * 0.055);
     
