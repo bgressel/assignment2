@@ -25,7 +25,7 @@ void Jet::setEngines(int e){
 }
 
 //sets milage and makes sure it follows conditions
-void Jet::setMileage(int x){
+void Jet::mileageEstimate(double x){
     mileage=rand() % 60 + 40;
     if (fuelType == "Rocket" && numberofEngines>2)
        mileage = mileage + (mileage * 0.055);

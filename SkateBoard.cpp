@@ -10,7 +10,7 @@ SkateBoard::SkateBoard(double m){
 SkateBoard::~SkateBoard()=default;
 
 //gets random number and makes it a decimal then follows conditions
-void SkateBoard::setMileage(double time){
+void SkateBoard::mileageEstimate(double time){
     int temp;
     mileage=rand() % 5 + 1;
     mileage=mileage/10;

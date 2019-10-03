@@ -20,6 +20,6 @@ public:
     virtual ~Jet();
     
     void setEngines(int e); //sets engines
-    void setMileage(int x); //sets mileage
+    virtual void mileageEstimate(double x); //sets mileage
 };
 #endif /* Jet_h */

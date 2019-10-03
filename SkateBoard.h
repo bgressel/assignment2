@@ -14,6 +14,6 @@ public:
     explicit SkateBoard(double m);
     
     virtual ~SkateBoard();
-    virtual double setMileage(double time);
+    virtual double mileageEstimate(double time);
 };
 #endif /* SkateBoard_h */
