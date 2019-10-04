@@ -1,15 +1,18 @@
-1. This binary file has been added.
-2. 
-3. Sep. 25th, 2019; 6:13 PM EST.
-4. Branches are useful because it stops the programmer from having to copy files from directory to directory and it also keeps the master branch free from questionable code.
-5. Git status provides you the details of the files staged in the current directory but also provides the comparison with the origin branch. Git log just gives you a commit log from the directory.
-6. git log --Vehicle.h
-7. git log --grep=file
-8. A) Inheritance is when you create subclasses of a certain class that inherit all of its properties. It's like a hierarchy of classes.
+Brendan Gressel
+Assignment 2
+
+a. This binary file has been added.
+b. I would use git log to get this answer.
+c. Sep. 25th, 2019; 6:13 PM EST.
+d. Branches are useful because it stops the programmer from having to copy files from directory to directory and it also keeps the master branch free from questionable code.
+e. Git status provides you the details of the files staged in the current directory but also provides the comparison with the origin branch. Git log just gives you a commit log from the directory.
+f. git log --follow Vehicle.h
+g. git log --grep=file
+h. A) Inheritance is when you create subclasses of a certain class that inherit all of its properties. It's like a hierarchy of classes.
 B) Polymorphism is when you have multiple implementations of the same thing. This is most common with generic classes, when subclasses have to rewrite these generic functions.
 C) Encapsulation is when you bundle data and functions that work together within one unit. This will restrict direct access to certain object components.
-9. The main difference is that in the dictator and lieutenants workflow, there is an extra layer of edits being made before reaching the final stage (dictator and integration manager) so there is less room for error and conflicts in the code. 
-10. A team of 100 would work much better with the Dictator and Lieutenants workflow because there is extra sifting through the code and more steps to ensure it all works together well (other than it all being pushed into the same repository and having conflict fixes being put on the developers).
+i. The main difference is that in the dictator and lieutenants workflow, there is an extra layer of edits being made before reaching the final stage (dictator and integration manager) so there is less room for error and conflicts in the code. 
+j. A team of 100 would work much better with the Dictator and Lieutenants workflow because there is extra sifting through the code and more steps to ensure it all works together well (other than it all being pushed into the same repository and having conflict fixes being put on the developers).
 
 OOP Principles:
 This driving simulator is using polymorphism within its functions (like toString and the mileage function). By making these function virtual, each vehicle is able to implement its own version to better accommodate for its specific variables. This is also using encapsulation by sectioning off each vehicle into its own class. Each vehicle has its own variables and functions that work with it that no other vehicle can access.
