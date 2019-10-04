@@ -3,15 +3,16 @@
 #include <stdlib.h>
 
 Jet::Jet(){
-    setMileage(0);
+    mileageEstimate(0);
     setFuelType("unknown");
+    numberofEngines=1;
     //number of engines is already set
 }
 
 //sets all values if they are passed in
 Jet::Jet(int e, double m, string fuelType){
     setEngines(e);
-    setMileage(m);
+    mileageEstimate(m);
     setFuelType(fuelType);
 }
 
@@ -25,12 +26,13 @@ void Jet::setEngines(int e){
 }
 
 //sets milage and makes sure it follows conditions
-void Jet::mileageEstimate(double x){
-    mileage=rand() % 60 + 40;
+double Jet::mileageEstimate(double x){
+    mileage=(rand() % 60 + 40)*x;
     if (fuelType == "Rocket" && numberofEngines>2)
        mileage = mileage + (mileage * 0.055);
+    return mileage;
 }
 
 string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tNumber of Engines: " +
-    numberofEngines;
+    return "-> Jet\n" + PoweredVehicle::toString();
+}

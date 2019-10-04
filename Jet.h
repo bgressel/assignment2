@@ -8,7 +8,7 @@
 class Jet : public PoweredVehicle {
     
 private:
-    int numberofEngines=1;
+    int numberofEngines;
     double mileage;
     string fuelType;
     
@@ -20,7 +20,7 @@ public:
     virtual ~Jet();
     
     void setEngines(int e); //sets engines
-    virtual void mileageEstimate(double x); //sets mileage
+    virtual double mileageEstimate(double x); //sets mileage
     virtual string toString();
 };
 #endif /* Jet_h */

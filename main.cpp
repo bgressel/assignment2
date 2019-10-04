@@ -1,6 +1,10 @@
 #include <iostream>
 #include "Car.h"
 #include "Bicycle.h"
+#include "Jet.h"
+#include "SkateBoard.h"
+#include "Scooter.h"
+
 
 void printVehiclesRoster(Vehicle **vehicles, int size);
 

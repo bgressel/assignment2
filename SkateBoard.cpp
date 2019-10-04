@@ -1,6 +1,6 @@
 //Brendan Gressel
 
-#include <SkateBoard.h>
+#include "SkateBoard.h"
 #include <stdlib.h>
 
 SkateBoard::SkateBoard(double m, string mo, string b){
@@ -12,15 +12,17 @@ SkateBoard::SkateBoard(double m, string mo, string b){
 SkateBoard::~SkateBoard()=default;
 
 //gets random number and makes it a decimal then follows conditions
-void SkateBoard::mileageEstimate(double time){
-    int temp;
-    mileage=rand() % 5 + 1;
+double SkateBoard::mileageEstimate(double time){
+    int temp, x;
+    mileage=(rand() % 5 + 1)*time;
     mileage=mileage/10;
     if  (time >= 25 && time<=250){
         time = time/3;
-        temp = rand() % time + 1
-        mileage= milage + temp;
+        x=time;
+        temp = rand() % x + 1;
+        mileage= mileage + temp;
     }
+    return mileage;
 }
 
 string SkateBoard::toString() {

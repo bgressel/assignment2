@@ -1,6 +1,8 @@
 //Brendan Gressel
 //my own vehicle
 
+#include "Scooter.h"
+
 //sets mileage
 Scooter::Scooter(double m, string mo, string b){
     mileageEstimate(m);
@@ -15,15 +17,17 @@ Scooter::~Scooter()=default;
 //if time is over 60, mileage=5
 double Scooter::mileageEstimate(double time){
     int temp;
-    mileage=rand() % 20 + 1;
+    mileage=(rand() % 20 + 1)*time;
     mileage=mileage/10;
     if  (time >= 15 ){
-        mileage= milage*2;
+        mileage= mileage*2;
     }
     if  (time >= 60 ){
         mileage= 5;
     }
+    return mileage;
 }
+
 string Scooter::toString() {
 return "Scooter\n" + Vehicle::toString();
 }
