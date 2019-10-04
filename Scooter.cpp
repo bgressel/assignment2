@@ -16,6 +16,7 @@ Scooter::~Scooter()=default;
 //if time is over 15, mileage is doubled
 //if time is over 60, mileage=5
 double Scooter::mileageEstimate(double time){
+    time=time/60;
     int temp;
     mileage=(rand() % 20 + 1)*time;
     mileage=mileage/10;

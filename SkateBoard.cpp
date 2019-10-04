@@ -13,6 +13,7 @@ SkateBoard::~SkateBoard()=default;
 
 //gets random number and makes it a decimal then follows conditions
 double SkateBoard::mileageEstimate(double time){
+    time=time/60;
     int temp, x;
     mileage=(rand() % 5 + 1)*time;
     mileage=mileage/10;
